@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;    
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1D61DD;
+    color: #f8f8f8;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('images/header-image.jpg')
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;   
+}
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: auto 15px;
+}
+ul {
+    list-style: none;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+    margin-top: 50px;
+}
+
+.pacotes {
+    background: #d1cfcfc5;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 0;
+    padding-top: 20px;
+
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    margin: 25px;
+    background-color: #f8f8f8;
+    border-radius: 24px 0px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content h2 {
+    font-size: 1rem;
+    
+}
+
+.pacotes .card-content ul li{
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0px;
+    color: grey;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+
+    padding: 5px 10px;
+    top: 15px;
+}
+
+.pacotes .card .card-tag-price {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1D61DD;
+    border-radius: 0px 8px 8px 0px;
+
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p {
+    margin: 0;
+    font-size: .8rem;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.service {
+    padding: 15px;
+}
+
+.service .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.service .card svg {
+    width: 50px;
+    height: 50px;
+    margin: 45px 0;
+    transform: all 1s;
+}
+
+.service .card svg:hover {
+    stroke: #1D61DD;
+    transform: scale(1.1);
+}
+
+.service .card h3 {
+    font-weight: bold;
+}
+.service .card p {
+    color: rgb(112, 112, 112);
+    font-size: .9rem;
+    text-align: center;
+    
+}
+
+.service .services-title{
+    text-align: center;
+    margin: 35px;
+}
+
+.service .services-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+
+.service button {
+    margin-top: 20px;
+    background-color: #1D61DD;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    
+}
+
+.contato {
+    padding: 60px;
+    position: relative;
+    background-color: #d1cfcfc5;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    
+    border-radius: 8px;
+    
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+.contato .contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: gray;
+
+    display: flex;
+    align-items: center;
+}
+.contato .contato-card svg {
+    width: 16px;
+    margin: 10px;
+
+}
+
+/* Responsividade */
+
+/* Especial mapa */
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    
+    .contato .contato-card {
+        left: 40px;
+    }
+}
+@media (max-width: 800px) {
+.contato {
+    padding: 20px 0;
+    }
+
+.contato .contato-card {
+    position: static;
+    margin: 40px auto;
+
+    }
+}
+/* Landscape phones to tablet */
+@media (max-width: 767px) {
+
+}
+
+/* landscape phones and down */
+@media (max-width: 488px) {
+    body{
+        margin-bottom: 55px;
+    }
+    
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+        
+        background: #1D61DD;
+        height: 55px;
+        font-weight: bold;
+        color: white;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+/* tablets to landscape desktop */
+/* @media(min-width: 768px) and (max-width: 979px) {
+
+} */
+
+/* Large desktop */
+/* @media (min-width: 1200px) {
+
+} */
